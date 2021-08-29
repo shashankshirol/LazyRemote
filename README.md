@@ -18,8 +18,8 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 ### Terminal:
 
-<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemoteTerminal.png" width="512">
+<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemoteTerminal.png">
 
 ### Your Phone:
 
-<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.jpg" width="512">
+<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.jpg" width="256">
