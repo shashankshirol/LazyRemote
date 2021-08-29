@@ -12,7 +12,8 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 - `python 3.6+`
 - And, everything in the `requirements.txt` file. Run: `pip install -r requirements.txt`
-- And, to be a lazy bum.
+- MOST IMPORTANTLY, this has only been tested on Windows. Don't know if it'll work on Linux/MacOS.
+- FINALLY, to be a lazy bum.
 
 ## Images:
 
