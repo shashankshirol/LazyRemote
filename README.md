@@ -15,3 +15,11 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 - And, to be a lazy bum.
 
 ## Images:
+
+### Terminal:
+
+![Terminal Example](Images/LazyRemoteTerminal.png?raw=true)
+
+### Your Phone:
+
+![UI](Images/LazyRemotePhone.jpg?raw=true)
