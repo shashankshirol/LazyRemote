@@ -6,7 +6,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 - Run the python script in the background. Open up the host webpage it shows on the terminal and Voila, all the necessary controls on your PHONE!!!
 - But, what if other people open the host webpage and start tinkering with your controls? Don't worry! LazyRemote has you covered, when accessing your host webpage, enter the REFERENCE number that is generated randomly every session. So, no one can control your PC except for YOU!
-- Take a look at the pictures below to get a better idea!
+- Take a look at the images below to get a better idea!
 
 ## Requirements:
 
