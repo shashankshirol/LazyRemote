@@ -80,6 +80,7 @@ if __name__ == '__main__':
     print("Your Reference Number: " + str(REFERENCE))
     print('Access host at:' + get_ip()+':5000/'+str(REFERENCE))
     print('--------------------------------------------------')
+    print('Press Ctrl+C to Stop')
     print('--------------------------------------------------')
     print()
     app.run(host="0.0.0.0")
