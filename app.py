@@ -21,11 +21,11 @@ def get_ip():
 @app.route("/"+str(REFERENCE))
 def home():
     ip = get_ip()
-    return render_template('index.html', ip=ip, name=NAME)
+    return render_template('index.html', ip=ip, name=NAME, reference=REFERENCE)
 
 
-@app.route("/incVolume")
-@app.route("/decVolume")
+@app.route("/"+str(REFERENCE)+"/incVolume")
+@app.route("/"+str(REFERENCE)+"/decVolume")
 def changeVolume():
     command = request.path
     if("inc" in command):
@@ -35,8 +35,8 @@ def changeVolume():
     return "-- Nothing --"
 
 
-@app.route("/seekLeft")
-@app.route("/seekRight")
+@app.route("/"+str(REFERENCE)+"/seekLeft")
+@app.route("/"+str(REFERENCE)+"/seekRight")
 def Seek():
     command = request.path
     if("Right" in command):
@@ -46,15 +46,15 @@ def Seek():
     return "-- Nothing --"
 
 
-@app.route("/Space")
+@app.route("/"+str(REFERENCE)+"/Space")
 def Space():
     command = request.path
-    if("space" in command):
+    if("Space" in command):
         pyautogui.press("space")
     return "-- Nothing --"
 
 
-@app.route("/Enter")
+@app.route("/"+str(REFERENCE)+"/Enter")
 def Enter():
     command = request.path
     if("Enter" in command):
@@ -62,7 +62,7 @@ def Enter():
     return "-- Nothing --"
 
 
-@app.route("/CtrlF4")
+@app.route("/"+str(REFERENCE)+"/CtrlF4")
 def CtrlF4():
     command = request.path
     if("Ctrl" in command):

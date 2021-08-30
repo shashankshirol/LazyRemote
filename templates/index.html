@@ -10,21 +10,21 @@
 </head>
 <body style="margin: 2%;">
 
-    <script type=text/javascript> $(function() { $("#incVolume").click(function (event) { $.getJSON('/incVolume', { },
+    <script type=text/javascript> $(function() { $("#incVolume").click(function (event) { $.getJSON("/"+{{reference}}+'/incVolume', { },
     function(data) { }); return false; }); }); </script>
-    <script type=text/javascript> $(function() { $("#decVolume").click(function (event) { $.getJSON('/decVolume', { },
-    function(data) { }); return false; }); }); </script>
-
-    <script type=text/javascript> $(function() { $("#seekRight").click(function (event) { $.getJSON('/seekRight', { },
-    function(data) { }); return false; }); }); </script>
-    <script type=text/javascript> $(function() { $("#seekLeft").click(function (event) { $.getJSON('/seekLeft', { },
+    <script type=text/javascript> $(function() { $("#decVolume").click(function (event) { $.getJSON("/"+{{reference}}+'/decVolume', { },
     function(data) { }); return false; }); }); </script>
 
-    <script type=text/javascript> $(function() { $("#space").click(function (event) { $.getJSON('/Space', { },
+    <script type=text/javascript> $(function() { $("#seekRight").click(function (event) { $.getJSON("/"+{{reference}}+'/seekRight', { },
     function(data) { }); return false; }); }); </script>
-    <script type=text/javascript> $(function() { $("#enter").click(function (event) { $.getJSON('/Enter', { },
+    <script type=text/javascript> $(function() { $("#seekLeft").click(function (event) { $.getJSON("/"+{{reference}}+'/seekLeft', { },
     function(data) { }); return false; }); }); </script>
-    <script type=text/javascript> $(function() { $("#ctrlf4").click(function (event) { $.getJSON('/CtrlF4', { },
+
+    <script type=text/javascript> $(function() { $("#space").click(function (event) { $.getJSON("/"+{{reference}}+'/Space', { },
+    function(data) { }); return false; }); }); </script>
+    <script type=text/javascript> $(function() { $("#enter").click(function (event) { $.getJSON("/"+{{reference}}+'/Enter', { },
+    function(data) { }); return false; }); }); </script>
+    <script type=text/javascript> $(function() { $("#ctrlf4").click(function (event) { $.getJSON("/"+{{reference}}+'/CtrlF4', { },
     function(data) { }); return false; }); }); </script>
 
     <h1 style="margin-bottom: 75px;">
