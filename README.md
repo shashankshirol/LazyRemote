@@ -44,6 +44,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 ### Bonus:
 
 Add the folder to your PATH variable, instruction: [Running Python Scripts from anywhere under Windows](https://correlated.kayako.com/article/40-running-python-scripts-from-anywhere-under-windows)
+
 After doing this, you'll be able to run the script from any command prompt window, just type `app.py`
 
 ## Use-cases:
