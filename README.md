@@ -29,7 +29,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 ## Installation:
 
 - Install Python from: (Download the latest version AND make sure you check 'Add Python to PATH checkbox while installing') https://www.python.org/downloads/
-- Download this repo as a zip and extract to any suitable location.
+- Download this repo as a zip (click on the green button that says 'Code' above) and extract to any suitable location.
 - Open a command prompt inside the folder `LazyRemote-main` (Where you extracted the zip contents). 
   Note: You can `cd` to the said folder in any command prompt window or type in `cmd` in the location specifier up top once you're in the folder.
 - Run `pip install -r requirements.txt` on the command prompt window to install all the dependencies.
