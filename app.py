@@ -27,12 +27,15 @@ def home():
 
 @app.route("/"+str(REFERENCE)+"/incVolume")
 @app.route("/"+str(REFERENCE)+"/decVolume")
+@app.route("/"+str(REFERENCE)+"/Mute")
 def changeVolume():
     command = request.path
     if("inc" in command):
         pyautogui.press("volumeup")
-    else:
+    elif("dec" in command):
         pyautogui.press("volumedown")
+    else:
+        pyautogui.press("volumemute")
     return "-- Nothing --"
 
 
@@ -47,11 +50,11 @@ def Seek():
     return "-- Nothing --"
 
 
-@app.route("/"+str(REFERENCE)+"/Space")
-def Space():
+@app.route("/"+str(REFERENCE)+"/PlayPause")
+def PlayPause():
     command = request.path
-    if("Space" in command):
-        pyautogui.press("space")
+    if("PlayPause" in command):
+        pyautogui.press("playpause")
     return "-- Nothing --"
 
 

@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>LazyRemote</title>
+    <link rel="icon" type="image/x-icon" href="https://github.com/shashankshirol/LazyRemote/blob/main/Images/lazyRem.png" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
 </head>
 <body style="margin: 2%;">
@@ -14,13 +16,15 @@
     function(data) { }); return false; }); }); </script>
     <script type=text/javascript> $(function() { $("#decVolume").click(function (event) { $.getJSON("/"+{{reference}}+'/decVolume', { },
     function(data) { }); return false; }); }); </script>
+    <script type=text/javascript> $(function() { $("#mute").click(function (event) { $.getJSON("/"+{{reference}}+'/Mute', { },
+    function(data) { }); return false; }); }); </script>
 
     <script type=text/javascript> $(function() { $("#seekRight").click(function (event) { $.getJSON("/"+{{reference}}+'/seekRight', { },
     function(data) { }); return false; }); }); </script>
     <script type=text/javascript> $(function() { $("#seekLeft").click(function (event) { $.getJSON("/"+{{reference}}+'/seekLeft', { },
     function(data) { }); return false; }); }); </script>
 
-    <script type=text/javascript> $(function() { $("#space").click(function (event) { $.getJSON("/"+{{reference}}+'/Space', { },
+    <script type=text/javascript> $(function() { $("#playpause").click(function (event) { $.getJSON("/"+{{reference}}+'/PlayPause', { },
     function(data) { }); return false; }); }); </script>
     <script type=text/javascript> $(function() { $("#enter").click(function (event) { $.getJSON("/"+{{reference}}+'/Enter', { },
     function(data) { }); return false; }); }); </script>
@@ -36,15 +40,18 @@
             Change Volume:
         -->
         <div class="row" style="margin-top: 25px;">
-            <div class="col">
+            <div class="col-4 col-xs-12">
                 <p style="font-size: x-large; font-weight: bolder;" class="col">Volume:</p>
             </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary" id="incVolume" style="font-size: x-large; font-weight: bolder; width: 50px; margin-right: 10px;">
-                    ↑
+            <div class="col-8 col-xs-12">
+                <button type="button" class="btn btn-primary" id="incVolume" style="font-size: x-large; font-weight: bolder;">
+                    <i class="bi bi-arrow-up-short"></i>
                 </button>
-                <button type="button" class="btn btn-primary" id="decVolume" style="font-size: x-large; font-weight: bolder; width: 50px;">
-                    ↓
+                <button type="button" class="btn btn-primary" id="decVolume" style="font-size: x-large; font-weight: bolder;">
+                    <i class="bi bi-arrow-down-short"></i>
+                </button>
+                <button type="button" class="btn btn-primary" id="mute" style="font-size: x-large; font-weight: bolder;">
+                    <i class="bi bi-volume-mute-fill"></i>
                 </button>
             </div>
         </div>
@@ -53,16 +60,16 @@
             Player Seek:
         -->
         <div class="row" style="margin-top: 25px;">
-            <div class="col">
-                <p style="font-size: x-large; font-weight: bolder;" class="col">Seek (for video players only):</p>
+            <div class="col-4 col-xs-12">
+                <p style="font-size: x-large; font-weight: bolder;" class="col">Seek:</p>
             </div>
-            <div class="col">
-                <button type="button" class="btn btn-primary" id="seekLeft" style="font-size: x-large; font-weight: bolder; width: 50px; margin-right: 10px;">
-                    ←
+            <div class="col-8 col-xs-12">
+                <button type="button" class="btn btn-primary" id="seekLeft" style="font-size: x-large; font-weight: bolder;">
+                    <i class="bi bi-arrow-left-short"></i>
                 </button>
 
-                <button type="button" class="btn btn-primary" id="seekRight" style="font-size: x-large; font-weight: bolder; width: 50px;">
-                    →
+                <button type="button" class="btn btn-primary" id="seekRight" style="font-size: x-large; font-weight: bolder;">
+                    <i class="bi bi-arrow-right-short"></i>
                 </button>
             </div>
         </div>
@@ -72,8 +79,8 @@
         -->
         <div class="row" style="margin-top: 25px;">
             <div class="col">
-                <button type="button" class="btn btn-primary" id="space" style="font-size: x-large; font-weight: bolder; width: 100%;">
-                    Space
+                <button type="button" class="btn btn-primary" id="playpause" style="font-size: x-large; font-weight: bolder; width: 100%;">
+                    Play/Pause
                 </button>
             </div>
         </div>
@@ -111,9 +118,15 @@
 
     </div>
 
-    <span class="mr-sm-2" style="position: fixed; left: 0; bottom: 0; text-align: center; width: 100%; margin-bottom: 5px;">
-        Made with <span style="color: red;">&hearts;</span> by Shashank Shirol.
-    </span>
+    <footer class="footer-container white-text-container text-center">
+        <div class="container">
+            <div class="row">
+                <div class=" col col-xs-12">
+                    <p>Made with <span id="heart" style="font-size: 20px; color: #e74c3c;">&hearts;</span> by Shashank Shirol</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
