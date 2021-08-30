@@ -7,6 +7,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 - Run the python script in the background. Open up the host webpage it shows on the terminal and Voila, all the necessary controls on your PHONE!!!
 - But, what if other people open the host webpage and start tinkering with your controls? Don't worry! LazyRemote has you covered, when accessing your host webpage, enter the REFERENCE number that is generated randomly every session. So, no one can control your PC except for YOU!
 - Take a look at the images below to get a better idea!
+- **NOTE: Make sure both your phone and your PC are on the same network.**
 
 ## Requirements:
 
@@ -24,6 +25,21 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 ### Your Phone:
 
 <img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.jpg" width="256">
+
+## Installation:
+
+- Install Python from: (Download the latest version AND make sure you check 'Add Python to PATH checkbox while installing') https://www.python.org/downloads/
+- Download this repo as a zip and extract to any suitable location.
+- Open a command prompt inside the folder `LazyRemote-main` (Where you extracted the zip contents). 
+  Note: You can `cd` to the said folder in any command prompt window or type in `cmd` in the location specifier up top once you're in the folder.
+- Run `pip install -r requirements.txt` on the command prompt window to install all the dependencies.
+- With everything set up, run `python app.py` to launch the program and access the host (refer the pictures) with your mobile device (now, your LazyRemote)
+- Leave the program running in the background while you stream your content.
+- Once you want to stop, click on the command prompt window you left running and press `CTRL + C`
+- Next time you want to use the service, open up a command prompt window in the said folder like before, and run `python app.py` and follow the on-screen instructions.
+- Embrace being Lazy
+
+**NOTE: Make sure both your phone and your PC are on the same network.**
 
 ## Use-cases:
 
