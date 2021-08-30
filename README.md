@@ -39,13 +39,12 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 - Next time you want to use the service, open up a command prompt window in the said folder like before, and run `python app.py` and follow the on-screen instructions.
 - Embrace being Lazy
 
+**NOTE: Make sure both your phone and your PC are on the same network.**
+
 ### Bonus:
 
 Add the folder to your PATH variable, instruction: [Running Python Scripts from anywhere under Windows](https://correlated.kayako.com/article/40-running-python-scripts-from-anywhere-under-windows)
-
 After doing this, you'll be able to run the script from any command prompt window, just type `app.py`
-
-**NOTE: Make sure both your phone and your PC are on the same network.**
 
 ## Use-cases:
 
