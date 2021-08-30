@@ -7,6 +7,7 @@ import random
 app = Flask(__name__)
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
+pyautogui.FAILSAFE = False
 
 NAME = socket.gethostname()
 REFERENCE = random.randint(1111,9999)
