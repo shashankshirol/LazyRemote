@@ -25,7 +25,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 ### Your Phone:
 
-<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.jpg" width="256">
+<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.png" width="256">
 
 ## Installation:
 
