@@ -4,7 +4,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 ## Usage:
 
-- Run the python script in the background. Open up the host webpage it shows on the command prompt on your phone and Voila, all the necessary media controls on your PHONE!!!
+- Run the python script in the background. Open up the host webpage(address displayed on the terminal or scan QR) on your phone and Voila, all the necessary media controls on your PHONE!!!
 - But, what if other people open the host webpage and start tinkering with your controls? Don't worry! LazyRemote has you covered, when accessing your host webpage, enter the REFERENCE number that is generated randomly every session. So, no one can control your PC except for YOU!
 - Take a look at the images below to get a better idea!
 
@@ -27,7 +27,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 <img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.png" width="256">
 
-## Installation:
+## Installation and Running:
 
 - Install Python from: (Download the latest version AND make sure you check 'Add Python to PATH checkbox while installing') https://www.python.org/downloads/
 - Download this repo as a zip (click on the green button that says 'Code' above) and extract to any suitable location.
