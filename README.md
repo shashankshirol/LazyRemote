@@ -21,7 +21,7 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 ### Terminal:
 
-<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemoteTerminal.png" width="768">
+<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyTerminal.png" width="768">
 
 ### Your Phone:
 
