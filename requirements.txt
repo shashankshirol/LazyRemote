@@ -1,2 +1,4 @@
-PyAutoGUI==0.9.53
+qrcode==7.3
 Flask==1.1.2
+PyAutoGUI==0.9.53
+Pillow==8.3.1

@@ -3,6 +3,8 @@ import socket
 import pyautogui
 import logging
 import random
+import qrcode
+import PIL
 
 app = Flask(__name__)
 log = logging.getLogger('werkzeug')
@@ -75,12 +77,16 @@ def CtrlF4():
 
 
 if __name__ == '__main__':
+    host = get_ip()+':5000/'+str(REFERENCE)
     print('--------------------------------------------------')
     print('--------------------------------------------------')
     print("Your Reference Number: " + str(REFERENCE))
-    print('Access host at:' + get_ip()+':5000/'+str(REFERENCE))
+    print('Access host at:' + host)
+    print('Or, scan the QR code shown!')
     print('--------------------------------------------------')
     print('Press Ctrl+C to Stop')
     print('--------------------------------------------------')
     print()
+    img = qrcode.make(host)
+    img.show()
     app.run(host="0.0.0.0")
