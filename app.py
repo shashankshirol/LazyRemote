@@ -56,7 +56,7 @@ def Seek():
 def PlayPause():
     command = request.path
     if("PlayPause" in command):
-        pyautogui.press("playpause")
+        pyautogui.press("space")
     return "-- Nothing --"
 
 
