@@ -44,7 +44,7 @@
             </div>
             <div class="col-8 col-xs-12">
                 <button type="button" class="btn btn-primary" id="incVolume" style="font-size: x-large; font-weight: bolder;">
-                    <i class="bi bi-arrow-up-short"></i>
+                    <i class="bi bi-arrow-up-short"><a href="'/'+{{reference}}+'/incVolume'"></a></i>
                 </button>
                 <button type="button" class="btn btn-primary" id="decVolume" style="font-size: x-large; font-weight: bolder;">
                     <i class="bi bi-arrow-down-short"></i>
@@ -89,9 +89,20 @@
         -->
         <div class="row" style="margin-top: 25px;">
             <div class="col">
-                <button type="button" class="btn btn-primary" id="enter" style="font-size: x-large; font-weight: bolder; width: 100%;">
+                <a class="btn btn-primary" id="enter" style="font-size: x-large; font-weight: bolder; width: 100%;" href="/{{reference}}/Mouse">
                     Enter
-                </button>
+                </a>
+            </div>
+        </div>
+
+        <!--
+            Mouse:
+        -->
+        <div class="row" style="margin-top: 25px;">
+            <div class="col">
+                <a class="btn btn-primary" id="mouse" style="font-size: x-large; font-weight: bolder; width: 100%;" href="/{{reference}}/Mouse">
+                    Mouse
+                </a>
             </div>
         </div>
 
@@ -118,7 +129,7 @@
     </div>
 
     <footer class="footer-container white-text-container text-center">
-        <div class="container">
+        <div class="container" style="padding-top: 10%;">
             <div class="row">
                 <div class=" col col-xs-12">
                     <p>Made with <span id="heart" style="font-size: 20px; color: #e74c3c;">&hearts;</span> by Shashank Shirol</p>

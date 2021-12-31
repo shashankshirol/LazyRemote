@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 import socket
 import pyautogui
 import logging
@@ -38,7 +38,8 @@ def changeVolume():
         pyautogui.press("volumedown")
     else:
         pyautogui.press("volumemute")
-    return "-- Nothing --"
+    
+    return ""
 
 
 @app.route("/"+str(REFERENCE)+"/seekLeft")
@@ -49,7 +50,8 @@ def Seek():
         pyautogui.press("right")
     else:
         pyautogui.press("left")
-    return "-- Nothing --"
+
+    return ""
 
 
 @app.route("/"+str(REFERENCE)+"/PlayPause")
@@ -57,7 +59,8 @@ def PlayPause():
     command = request.path
     if("PlayPause" in command):
         pyautogui.press("space")
-    return "-- Nothing --"
+    
+    return ""
 
 
 @app.route("/"+str(REFERENCE)+"/Enter")
@@ -65,7 +68,24 @@ def Enter():
     command = request.path
     if("Enter" in command):
         pyautogui.press("enter")
-    return "-- Nothing --"
+
+    return ""
+
+
+@app.route("/"+str(REFERENCE)+"/Mouse")
+def Mouse():
+    return render_template('ham_mouse.html', name=NAME, reference=REFERENCE)
+
+
+@app.route("/"+str(REFERENCE)+"/Mouse/action")
+def MouseAction():
+    x = request.args.get('x', 0, type=int)
+    y = request.args.get('y', 0, type=int)
+    pyautogui.moveRel(x, y)
+    if ( x == 0 and y == 0):
+        pyautogui.click()
+
+    return ""
 
 
 @app.route("/"+str(REFERENCE)+"/CtrlF4")
@@ -73,7 +93,7 @@ def CtrlF4():
     command = request.path
     if("Ctrl" in command):
         pyautogui.hotkey("ctrl", "f4")
-    return "-- Nothing --"
+    return ""
 
 
 if __name__ == '__main__':
