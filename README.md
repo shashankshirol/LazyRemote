@@ -27,6 +27,9 @@ Picture this, you are watching a series/movie on you PC and to enjoy the content
 
 <img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemotePhone.png" width="256">
 
+#### LazyRemote-Mouse
+<img src="https://github.com/shashankshirol/LazyRemote/blob/main/Images/LazyRemoteMouse.jpg" width="256">
+
 ## Installation and Running:
 
 - Install Python from: (Download the latest version AND make sure you check 'Add Python to PATH checkbox while installing') https://www.python.org/downloads/
