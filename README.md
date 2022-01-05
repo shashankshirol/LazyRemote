@@ -59,4 +59,4 @@ Apart from having to change volume and seeking to a missed part, LazyRemote can 
 - Pause/Play content using the SPACE key
 - Allow seeking to a particular point using the ENTER key (Useful on Netflix)
 - Use the mouse to control your mouse-pointer as you would on a trackpad
-- And, if you are feeling frisky and watching something you shouldn't (We don't judge, promise), LazyRemote can also trigger a hotkey (CTRL+F4) to close the current tab (works on Chrome)
+- And, if you are watching something you shouldn't, LazyRemote can also trigger a hotkey (CTRL+F4) to close the current tab (works on Chrome)
